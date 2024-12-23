@@ -18,7 +18,8 @@ This is a web app that allows users to upload local music files to their Spotify
 ### Server
 1. Install dependencies:
 ```bash
-pip install -r server/requirements.txt
+cd server
+pip install -r requirements.txt
 ```
 
 2. Run the FastAPI server:
@@ -30,6 +31,7 @@ uvicorn backend.app:app --reload
 ### Client
 1. Install dependencies:
 ```bash
+cd client
 npm install
 ```
 
