@@ -41,4 +41,4 @@ npm start
 Ensure "Local Files" is enabled in your Spotify settings and the local files directory is writable.
 
 ## License
-MIT License
+ISC License
