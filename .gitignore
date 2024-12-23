@@ -1,6 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 env
-server/__pychache__
+*pycache*
 
 # dependencies
 /node_modules
