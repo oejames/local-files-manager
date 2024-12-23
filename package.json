@@ -1,0 +1,17 @@
+{
+  "name": "localfiles",
+  "version": "1.0.0",
+  "description": "This is a web app that allows for customizing (metadata, cover art), managing and uploading local files to Spotify.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pip install -r requirements.txt && cd src/client && npm install && npm run build",
+    "start": "concurrently \"cd src/server && uvicorn app:app --reload --port 8000\" \"cd src/client && npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
