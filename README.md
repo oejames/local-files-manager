@@ -12,8 +12,7 @@ This web app allows for customizing metadata, adding cover art, and handling upl
 
 ## Tech Stack
 - **Frontend**: React, Tailwind CSS, Lucide-React
-- **Backend**: FastAPI, Python, Mutagen (for audio file metadata handling)
-- **Platform**: Auto-detects operating system to set the correct local file path
+- **Backend**: FastAPI, Python, Mutagen (for audio file metadata handling), Platform (Auto-detects operating system to set the correct local file path)
 
 ## Installation
 
