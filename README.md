@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 2. Run the FastAPI server:
 ```bash
-uvicorn backend.app:app --reload
+uvicorn app:app --reload --port 8000
 ```
 
 
