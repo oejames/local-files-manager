@@ -1,6 +1,6 @@
 # Spotify Local Files Manager
 
-This is a web app that allows for managing and customizing local files (metadata, cover art) to a Spotify library. 
+This is a web app that allows for customizing (metadata, cover art), managing and uploading local files to Spotify. 
 
 ## Features
 - Upload and add MP3 files to Spotify's local files directory
