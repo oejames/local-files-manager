@@ -1,11 +1,10 @@
 # Spotify Local Files Manager
 
-This is a web app that allows users to upload local music files to their Spotify library. The app integrates with Spotify's local files system, enabling users to manage their local music collection directly within Spotify.
+This is a web app that allows for customizing (metadata, cover art), managing and uploading local files to Spotify. 
 
 ## Features
 - Upload and add MP3 files to Spotify's local files directory
 - Add metadata (artist, album, etc.) and cover art to tracks
-- Check Spotify's local file setup status and receive tips
 - Automatically save files to the appropriate directory based on OS
 
 ## Tech Stack
@@ -18,20 +17,20 @@ This is a web app that allows users to upload local music files to their Spotify
 ### Server
 1. Install dependencies:
 ```bash
-cd server
+cd src/server
 pip install -r requirements.txt
 ```
 
 2. Run the FastAPI server:
 ```bash
-uvicorn backend.app:app --reload
+uvicorn app:app --reload --port 8000
 ```
 
 
 ### Client
 1. Install dependencies:
 ```bash
-cd client
+cd src/client
 npm install
 ```
 
