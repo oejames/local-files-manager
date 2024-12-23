@@ -2,7 +2,7 @@
   "name": "spotify-local-manager",
   "version": "0.1.0",
   "private": true,
-  "proxy":  "http://127.0.0.1:8000",
+  "proxy": "http://127.0.0.1:8000",
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.4",
     "@shadcn/ui": "^0.0.4",
@@ -36,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }
