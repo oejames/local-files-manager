@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "pip install -r requirements.txt && cd src/client && npm install && npm run build",
+    "install-all": "npm install && pip install -r requirements.txt && cd src/client && npm install",
     "start": "concurrently \"cd src/server && uvicorn app:app --reload --port 8000\" \"cd src/client && npm start\""
   },
   "keywords": [],
