@@ -17,7 +17,7 @@ This is a web app that allows for customizing (metadata, cover art), managing an
 ### Server
 1. Install dependencies:
 ```bash
-cd server
+cd src/server
 pip install -r requirements.txt
 ```
 
@@ -30,7 +30,7 @@ uvicorn app:app --reload --port 8000
 ### Client
 1. Install dependencies:
 ```bash
-cd client
+cd src/client
 npm install
 ```
 
