@@ -17,28 +17,21 @@ This web app allows for customizing metadata, adding cover art, and handling upl
 
 ## Installation
 
-### Server
-1. Install dependencies:
+
+1. Create a virtual environment:
 ```bash
-cd src/server
-pip install -r requirements.txt
+python -m venv env
+# On Windows:
+env\Scripts\activate
+# On macOS/Linux:
+source env/bin/activate
+```
+2. Install dependencies:
+```bash
+npm run install-all
 ```
 
-2. Run the FastAPI server:
-```bash
-uvicorn app:app --reload --port 8000
-```
-
-
-### Client
-1. Install dependencies:
-```bash
-cd src/client
-npm install
-```
-
-
-3. Run the development server:
+3. Run:
 ```bash
 npm start
 ```
