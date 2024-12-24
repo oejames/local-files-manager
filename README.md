@@ -7,7 +7,7 @@ This web app allows for customizing metadata, adding cover art, and handling upl
 
 ## Features
 - Upload and add MP3 files to Spotify's local files directory
-- Add metadata (artist, album, etc.) and cover art to tracks
+- Add metadata (artist, album, title) and cover art to tracks
 - Automatically save files to the appropriate directory based on OS
 
 ## Tech Stack
