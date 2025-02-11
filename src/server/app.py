@@ -10,8 +10,20 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from typing import List, Optional
 import platform
 import mimetypes
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
+
+## testing
+# CORS middleware configuration
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def get_spotify_local_path():
     """Get the default Spotify local files directory based on OS."""
