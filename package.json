@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install-all": "npm install && pip install -r requirements.txt && cd src/client && npm install",
-    "start": "concurrently \"cd src/server && uvicorn app:app --reload --port 8000\" \"cd src/client && npm start\""
+    "start": "concurrently \"cd src/server && uvicorn app:app --host 0.0.0.0 --port 8000\" \"cd src/client && npm start\""
   },
   "keywords": [],
   "author": "",
