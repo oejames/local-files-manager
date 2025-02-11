@@ -10,30 +10,8 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from typing import List, Optional
 import platform
 import mimetypes
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
 
 app = FastAPI()
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"], 
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-
-app.mount("/static", StaticFiles(directory="../client/build/static"), name="static")
-
-
-@app.get("/{full_path:path}")
-async def serve_react(full_path: str):
-    if full_path.startswith("api/"):
-        raise HTTPException(status_code=404)
-    return FileResponse("../client/build/index.html")
-
 
 def get_spotify_local_path():
     """Get the default Spotify local files directory based on OS."""
@@ -197,8 +175,3 @@ async def check_spotify_status():
         ]
     }
     return status
-
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)

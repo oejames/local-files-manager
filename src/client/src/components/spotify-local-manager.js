@@ -9,15 +9,13 @@ const SpotifyLocalManager = () => {
   const [success, setSuccess] = useState(null);
   const [customPath, setCustomPath] = useState('');
 
-  const API_URL = process.env.REACT_APP_API_URL;
-
   useEffect(() => {
     checkSpotifyStatus();
   }, []);
 
   const checkSpotifyStatus = async () => {
     try {
-      const response = await fetch(`${API_URL}/api/spotify-status`);
+      const response = await fetch('/api/spotify-status');
       const data = await response.json();
       setStatus(data);
       setCustomPath(data.path);
@@ -77,7 +75,7 @@ const SpotifyLocalManager = () => {
       });
       formData.append('metadata', metadataBlob, 'metadata.json');
   
-      const response = await fetch(`${API_URL}/api/tracks`, {
+      const response = await fetch('/api/tracks', {
         method: 'POST',
         body: formData,
       });

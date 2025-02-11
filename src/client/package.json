@@ -2,10 +2,7 @@
   "name": "spotify-local-manager",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "development": "http://127.0.0.1:8000",
-    "production": "https://local-files-manager.onrender.com"
-  },
+  "proxy": "http://127.0.0.1:8000",
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.4",
     "@shadcn/ui": "^0.0.4",
