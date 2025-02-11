@@ -10,8 +10,21 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from typing import List, Optional
 import platform
 import mimetypes
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI, UploadFile, File, HTTPException
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://local-files-manager.onrender.com",  # Your frontend URL
+        "http://localhost:3000",  # Local development URL
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 def get_spotify_local_path():
     """Get the default Spotify local files directory based on OS."""
